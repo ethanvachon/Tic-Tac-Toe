@@ -26,6 +26,7 @@ namespace Tic_Tac_Toe
         if (key.Key == ConsoleKey.Escape)
         {
           running = false;
+          break;
         }
         Console.Clear();
         Console.WriteLine("select the number that corresponds with the tile you want to select");
@@ -37,26 +38,34 @@ namespace Tic_Tac_Toe
           game.OTurn(board);
           if (game.WinCheck(board) == "O")
           {
+            Console.Clear();
+            Console.WriteLine(game.drawBoard(board));
             Console.WriteLine("Player 1 wins");
             running = false;
             break;
           }
           if (game.WinCheck(board) == "X")
           {
-            Console.WriteLine("Player 1 wins");
+            Console.Clear();
+            Console.WriteLine(game.drawBoard(board));
+            Console.WriteLine("Player 2 wins");
             running = false;
             break;
           }
           game.XTurn(board);
           if (game.WinCheck(board) == "O")
           {
+            Console.Clear();
+            Console.WriteLine(game.drawBoard(board));
             Console.WriteLine("Player 1 wins");
             running = false;
             break;
           }
           if (game.WinCheck(board) == "X")
           {
-            Console.WriteLine("Player 1 wins");
+            Console.Clear();
+            Console.WriteLine(game.drawBoard(board));
+            Console.WriteLine("Player 2 wins");
             running = false;
             break;
           }

@@ -124,13 +124,88 @@ namespace Tic_Tac_Toe
 
     internal string WinCheck(string[] board)
     {
+
       // 012, 345, 678
-      // 136, 147, 258
-      // 048, 246
+
       if (board[0] == "O" && board[1] == "O" && board[2] == "O")
       {
         return "O";
       }
+      if (board[0] == "X" && board[1] == "X" && board[2] == "X")
+      {
+        return "X";
+      }
+
+      if (board[3] == "O" && board[4] == "O" && board[5] == "O")
+      {
+        return "O";
+      }
+      if (board[3] == "X" && board[4] == "X" && board[5] == "X")
+      {
+        return "X";
+      }
+
+      if (board[6] == "O" && board[7] == "O" && board[8] == "O")
+      {
+        return "O";
+      }
+
+      if (board[6] == "X" && board[7] == "X" && board[8] == "X")
+      {
+        return "X";
+      }
+
+      // 136, 147, 258
+
+      if (board[1] == "O" && board[3] == "O" && board[6] == "O")
+      {
+        return "O";
+      }
+      if (board[1] == "X" && board[3] == "X" && board[6] == "X")
+      {
+        return "X";
+      }
+
+      if (board[1] == "O" && board[4] == "O" && board[7] == "O")
+      {
+        return "O";
+      }
+      if (board[1] == "X" && board[4] == "X" && board[7] == "X")
+      {
+        return "X";
+      }
+
+      if (board[2] == "O" && board[5] == "O" && board[8] == "O")
+      {
+        return "O";
+      }
+
+      if (board[2] == "X" && board[5] == "X" && board[8] == "X")
+      {
+        return "X";
+      }
+
+      // 048, 246
+
+      if (board[0] == "O" && board[4] == "O" && board[8] == "O")
+      {
+        return "O";
+      }
+      if (board[0] == "X" && board[4] == "X" && board[8] == "X")
+      {
+        return "X";
+      }
+
+      if (board[2] == "O" && board[4] == "O" && board[6] == "O")
+      {
+        return "O";
+      }
+
+      if (board[2] == "X" && board[4] == "X" && board[6] == "X")
+      {
+        return "X";
+      }
+
       return "N";
     }
   }
