@@ -30,7 +30,16 @@ namespace Tic_Tac_Toe
         Console.Clear();
         Console.WriteLine("select the number that corresponds with the tile you want to select");
         Console.WriteLine(game.info);
-        Thread.Sleep(1000);
+        Thread.Sleep(5000);
+
+        bool main = true;
+        while (main)
+        {
+          game.OTurn();
+          game.WinCheck();
+          game.XTurn();
+          game.WinCheck();
+        }
       }
     }
   }

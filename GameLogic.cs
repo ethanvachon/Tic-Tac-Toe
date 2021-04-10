@@ -1,3 +1,5 @@
+using System;
+
 namespace Tic_Tac_Toe
 {
   public class GameLogic
@@ -24,6 +26,27 @@ namespace Tic_Tac_Toe
     {
       arr[index] = "O";
       return drawBoard(arr);
+    }
+
+    public string addX(string[] arr, int index)
+    {
+      arr[index] = "X";
+      return drawBoard(arr);
+    }
+
+    internal void OTurn()
+    {
+      throw new NotImplementedException();
+    }
+
+    internal void XTurn()
+    {
+      throw new NotImplementedException();
+    }
+
+    internal void WinCheck()
+    {
+      throw new NotImplementedException();
     }
   }
 }
