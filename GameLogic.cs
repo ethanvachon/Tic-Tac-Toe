@@ -34,17 +34,93 @@ namespace Tic_Tac_Toe
       return drawBoard(arr);
     }
 
-    internal void OTurn()
+    internal void OTurn(string[] arr)
     {
-      throw new NotImplementedException();
+      Console.WriteLine(drawBoard(arr));
+      Console.WriteLine("player 1 turn");
+      ConsoleKeyInfo key = Console.ReadKey();
+      if (key.Key == ConsoleKey.D1)
+      {
+        addO(arr, 0);
+      }
+      else if (key.Key == ConsoleKey.D2)
+      {
+        addO(arr, 1);
+      }
+      else if (key.Key == ConsoleKey.D3)
+      {
+        addO(arr, 2);
+      }
+      else if (key.Key == ConsoleKey.D4)
+      {
+        addO(arr, 3);
+      }
+      else if (key.Key == ConsoleKey.D5)
+      {
+        addO(arr, 4);
+      }
+      else if (key.Key == ConsoleKey.D6)
+      {
+        addO(arr, 5);
+      }
+      else if (key.Key == ConsoleKey.D7)
+      {
+        addO(arr, 6);
+      }
+      else if (key.Key == ConsoleKey.D8)
+      {
+        addO(arr, 7);
+      }
+      else if (key.Key == ConsoleKey.D9)
+      {
+        addO(arr, 8);
+      }
     }
 
-    internal void XTurn()
+    internal void XTurn(string[] arr)
     {
-      throw new NotImplementedException();
+      Console.WriteLine(drawBoard(arr));
+      Console.WriteLine("player 2 turn");
+      ConsoleKeyInfo key = Console.ReadKey();
+      if (key.Key == ConsoleKey.D1)
+      {
+        addX(arr, 0);
+      }
+      else if (key.Key == ConsoleKey.D2)
+      {
+        addX(arr, 1);
+      }
+      else if (key.Key == ConsoleKey.D3)
+      {
+        addX(arr, 2);
+      }
+      else if (key.Key == ConsoleKey.D4)
+      {
+        addX(arr, 3);
+      }
+      else if (key.Key == ConsoleKey.D5)
+      {
+        addX(arr, 4);
+      }
+      else if (key.Key == ConsoleKey.D6)
+      {
+        addX(arr, 5);
+      }
+      else if (key.Key == ConsoleKey.D7)
+      {
+        addX(arr, 6);
+      }
+      else if (key.Key == ConsoleKey.D8)
+      {
+        addX(arr, 7);
+      }
+      else if (key.Key == ConsoleKey.D9)
+      {
+        addX(arr, 8);
+      }
     }
 
-    internal void WinCheck()
+    internal void WinCheck(string[] board)
     {
       throw new NotImplementedException();
     }

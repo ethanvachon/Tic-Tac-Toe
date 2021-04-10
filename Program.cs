@@ -35,10 +35,10 @@ namespace Tic_Tac_Toe
         bool main = true;
         while (main)
         {
-          game.OTurn();
-          game.WinCheck();
-          game.XTurn();
-          game.WinCheck();
+          game.OTurn(board);
+          //   game.WinCheck(board);
+          game.XTurn(board);
+          //   game.WinCheck(board);
         }
       }
     }
