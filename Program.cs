@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Tic_Tac_Toe
 {
@@ -6,6 +7,7 @@ namespace Tic_Tac_Toe
   {
     static void Main(string[] args)
     {
+      Console.Clear();
       GameLogic game = new GameLogic();
       string[] board = new string[] { "-", "-", "-", "-", "-", "-", "-", "-", "-" };
       bool running = true;
@@ -25,7 +27,10 @@ namespace Tic_Tac_Toe
         {
           running = false;
         }
-        Console.WriteLine();
+        Console.Clear();
+        Console.WriteLine("select the number that corresponds with the tile you want to select");
+        Console.WriteLine(game.info);
+        Thread.Sleep(1000);
       }
     }
   }

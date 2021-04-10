@@ -2,6 +2,13 @@ namespace Tic_Tac_Toe
 {
   public class GameLogic
   {
+    public string info = @"
+         1 | 2 | 3
+        ---|---|---
+         4 | 5 | 6
+        ---|---|---
+         7 | 8 | 9
+    ";
     public string drawBoard(string[] arr)
     {
       return $@"
