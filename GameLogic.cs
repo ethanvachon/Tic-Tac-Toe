@@ -39,42 +39,54 @@ namespace Tic_Tac_Toe
       Console.Clear();
       Console.WriteLine(drawBoard(arr));
       Console.WriteLine("player 1 turn");
-      ConsoleKeyInfo key = Console.ReadKey();
-      if (key.Key == ConsoleKey.D1)
+      while (true)
       {
-        addO(arr, 0);
-      }
-      else if (key.Key == ConsoleKey.D2)
-      {
-        addO(arr, 1);
-      }
-      else if (key.Key == ConsoleKey.D3)
-      {
-        addO(arr, 2);
-      }
-      else if (key.Key == ConsoleKey.D4)
-      {
-        addO(arr, 3);
-      }
-      else if (key.Key == ConsoleKey.D5)
-      {
-        addO(arr, 4);
-      }
-      else if (key.Key == ConsoleKey.D6)
-      {
-        addO(arr, 5);
-      }
-      else if (key.Key == ConsoleKey.D7)
-      {
-        addO(arr, 6);
-      }
-      else if (key.Key == ConsoleKey.D8)
-      {
-        addO(arr, 7);
-      }
-      else if (key.Key == ConsoleKey.D9)
-      {
-        addO(arr, 8);
+        ConsoleKeyInfo key = Console.ReadKey();
+        if (key.Key == ConsoleKey.D1 && arr[0] != "X" && arr[0] != "O")
+        {
+          addO(arr, 0);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D2 && arr[1] != "X" && arr[1] != "O")
+        {
+          addO(arr, 1);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D3 && arr[2] != "X" && arr[2] != "O")
+        {
+          addO(arr, 2);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D4 && arr[3] != "X" && arr[0] != "3")
+        {
+          addO(arr, 3);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D5 && arr[4] != "X" && arr[0] != "4")
+        {
+          addO(arr, 4);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D6 && arr[5] != "X" && arr[5] != "O")
+        {
+          addO(arr, 5);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D7 && arr[6] != "X" && arr[6] != "O")
+        {
+          addO(arr, 6);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D8 && arr[7] != "X" && arr[7] != "O")
+        {
+          addO(arr, 7);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D9 && arr[8] != "X" && arr[8] != "O")
+        {
+          addO(arr, 8);
+          break;
+        }
       }
     }
 
@@ -83,42 +95,55 @@ namespace Tic_Tac_Toe
       Console.Clear();
       Console.WriteLine(drawBoard(arr));
       Console.WriteLine("player 2 turn");
-      ConsoleKeyInfo key = Console.ReadKey();
-      if (key.Key == ConsoleKey.D1)
+      while (true)
       {
-        addX(arr, 0);
-      }
-      else if (key.Key == ConsoleKey.D2)
-      {
-        addX(arr, 1);
-      }
-      else if (key.Key == ConsoleKey.D3)
-      {
-        addX(arr, 2);
-      }
-      else if (key.Key == ConsoleKey.D4)
-      {
-        addX(arr, 3);
-      }
-      else if (key.Key == ConsoleKey.D5)
-      {
-        addX(arr, 4);
-      }
-      else if (key.Key == ConsoleKey.D6)
-      {
-        addX(arr, 5);
-      }
-      else if (key.Key == ConsoleKey.D7)
-      {
-        addX(arr, 6);
-      }
-      else if (key.Key == ConsoleKey.D8)
-      {
-        addX(arr, 7);
-      }
-      else if (key.Key == ConsoleKey.D9)
-      {
-        addX(arr, 8);
+
+        ConsoleKeyInfo key = Console.ReadKey();
+        if (key.Key == ConsoleKey.D1 && arr[0] != "O" && arr[0] != "X")
+        {
+          addX(arr, 0);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D2 && arr[1] != "O" && arr[1] != "X")
+        {
+          addX(arr, 1);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D3 && arr[2] != "O" && arr[2] != "X")
+        {
+          addX(arr, 2);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D4 && arr[3] != "O" && arr[3] != "X")
+        {
+          addX(arr, 3);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D5 && arr[4] != "O" && arr[4] != "X")
+        {
+          addX(arr, 4);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D6 && arr[5] != "O" && arr[5] != "X")
+        {
+          addX(arr, 5);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D7 && arr[6] != "O" && arr[6] != "X")
+        {
+          addX(arr, 6);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D8 && arr[7] != "O" && arr[7] != "X")
+        {
+          addX(arr, 7);
+          break;
+        }
+        else if (key.Key == ConsoleKey.D9 && arr[8] != "O" && arr[8] != "X")
+        {
+          addX(arr, 8);
+          break;
+        }
       }
     }
 
