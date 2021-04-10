@@ -32,13 +32,34 @@ namespace Tic_Tac_Toe
         Console.WriteLine(game.info);
         Thread.Sleep(5000);
 
-        bool main = true;
-        while (main)
+        while (running)
         {
           game.OTurn(board);
-          //   game.WinCheck(board);
+          if (game.WinCheck(board) == "O")
+          {
+            Console.WriteLine("Player 1 wins");
+            running = false;
+            break;
+          }
+          if (game.WinCheck(board) == "X")
+          {
+            Console.WriteLine("Player 1 wins");
+            running = false;
+            break;
+          }
           game.XTurn(board);
-          //   game.WinCheck(board);
+          if (game.WinCheck(board) == "O")
+          {
+            Console.WriteLine("Player 1 wins");
+            running = false;
+            break;
+          }
+          if (game.WinCheck(board) == "X")
+          {
+            Console.WriteLine("Player 1 wins");
+            running = false;
+            break;
+          }
         }
       }
     }

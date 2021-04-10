@@ -36,6 +36,7 @@ namespace Tic_Tac_Toe
 
     internal void OTurn(string[] arr)
     {
+      Console.Clear();
       Console.WriteLine(drawBoard(arr));
       Console.WriteLine("player 1 turn");
       ConsoleKeyInfo key = Console.ReadKey();
@@ -79,6 +80,7 @@ namespace Tic_Tac_Toe
 
     internal void XTurn(string[] arr)
     {
+      Console.Clear();
       Console.WriteLine(drawBoard(arr));
       Console.WriteLine("player 2 turn");
       ConsoleKeyInfo key = Console.ReadKey();
@@ -120,9 +122,16 @@ namespace Tic_Tac_Toe
       }
     }
 
-    internal void WinCheck(string[] board)
+    internal string WinCheck(string[] board)
     {
-      throw new NotImplementedException();
+      // 012, 345, 678
+      // 136, 147, 258
+      // 048, 246
+      if (board[0] == "O" && board[1] == "O" && board[2] == "O")
+      {
+        return "O";
+      }
+      return "N";
     }
   }
 }
